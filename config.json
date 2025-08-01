@@ -1,0 +1,23 @@
+{
+  "input_file": "../assets/scopus.csv",
+  "base_uri": "http://example.org/publication/",
+  "class": "bibo:AcademicArticle",
+  "id_column": "DOI",
+  "prefixes": {
+    "bibo": "http://purl.org/ontology/bibo/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "schema": "http://schema.org/",
+    "foaf": "http://xmlns.com/foaf/0.1/"
+  },
+  "mappings": {
+    "Title": "dcterms:title",
+    "Year": "dcterms:issued",
+    "DOI": "bibo:doi",
+    "Abstract": "dcterms:abstract",
+    "Authors": "schema:author",
+    "Author full names": "schema:name",
+    "Author Keywords": "schema:keywords",
+    "Funding Details": "schema:funding",
+    "Source title": "schema:isPartOf"
+  }
+}
